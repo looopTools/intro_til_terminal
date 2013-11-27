@@ -1,0 +1,21 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc} %%\usepackage[utf8x]{inputenc} 
+\usepackage[danish]{babel} % Danish letters 
+\usepackage{afterpage}
+
+\title{Introduktion til Terminal}
+\author{Lars Nielsen}
+\begin{document}
+\maketitle
+	\afterpage{\null\newpage}
+	\pagenumbering{gobble}
+	\clearpage
+	\pagenumbering{roman}
+	\include{forord}	
+	\tableofcontents
+	\pagenumbering{gobble}
+	\clearpage
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+	\include{intro}
+\end{document}
