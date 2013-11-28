@@ -1,2 +1,9 @@
 \select@language {danish}
 \contentsline {chapter}{\numberline {1}Introduktion}{1}
+\contentsline {chapter}{\numberline {2}Navigering i filsystemet}{3}
+\contentsline {section}{\numberline {2.1}PWD - hvor er vi?}{3}
+\contentsline {section}{\numberline {2.2}LS - Hvad er der her?}{4}
+\contentsline {section}{\numberline {2.3}CD - Jeg vil v\IeC {\ae }k}{4}
+\contentsline {section}{\numberline {2.4}CP - Kopi}{4}
+\contentsline {section}{\numberline {2.5}MV - Flyt dig}{4}
+\contentsline {chapter}{\numberline {A}Ordliste}{5}

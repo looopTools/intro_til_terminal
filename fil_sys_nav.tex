@@ -1,0 +1,39 @@
+\chapter{Navigering i filsystemet}
+En af de vigtigts ting at kunne i kommandolinjen, er at  havde evnerne til at navigere OS'ets filsystem. Derfor starter vi med at forklare de forskellig kommandoer til at finde rundt.
+%\section{Lidt om fil systemet i UNIX}
+\section{PWD - hvor er vi?}
+En ret relevant dele af navigering er ofte at vide hvor man i det hele taget er. Det er her kommandoen \textit{pwd} kommer ind i billedet. \textit{pwd} står for \textbf{P}rint \textbf{W}orking \textbf{D}irectory, kommandoen returnere den sti som man arbejder i lige nu. 
+\begin{lstlisting}
+	Larss-MacBook-Pro:intro_til_terminal tools $ pwd
+	/Users/tools/Documents/intro_til_terminal
+\end{lstlisting}
+\subsection*{Og hvad så}
+Hvad kan man så bruge det til? Man kan altid bruge ens nuværende "position" til at navigere filsystemet. Men for at kunne bruge information skal man kunne forstå resultat, så lad os bryde stien ned. 
+\subsubsection*{intro\_til\_terminal}
+Det sidste element af stien er den mappe, man arbejder i og interager med. Det er altså her andre kommandoer som interagere med filer og visse andre kommandoer udføre deres arbejde hvis de bliver kaldt. %forklar kaldt
+\subsubsection*{/Users/tools/Documents/}
+Er den overordnet filsti, som man er nød til at komme igennem for at kunne komme til \textit{intro\_til\_terminal}.
+
+\section{LS - Hvad er der her?}
+En anden vigtigt del af at arbejde i filsystemet, er at vide hvilke filer og mapper, som er i den mappe man arbejder i. Det er til dette formål man bruger kommandoen \textit{ls}. \textit{ls} betyder list directory contents, altså list indholdet af en mappe. Hvis kommandoen kaldes ud flag, returneres en liste af alt, som ikke er skjult i mappen.
+\begin{lstlisting}
+	Larss-MacBook-Pro:intro_til_terminal tools$ ls
+	LICENSE		fil_sys_nav.tex	intro.tex	main_book.tex
+	README.md	forord.aux	main_book.aux	main_book.toc
+	compile.sh	forord.tex	main_book.log	ordliste.aux
+	fil_sys_nav.aux	intro.aux	main_book.pdf	ordliste.tex
+\end{lstlisting}
+\subsection*{Men jeg har skjulte filer}
+På UNIX baseret, systemer er alle filer og mapper som starter med \textit{.} skjulte, eksemplet kunne hede .skjult. Den vil vi altså gerne kunne se, så vi bruger flaget \textit{-a} som står for all eller alle, også får man en lidt anderledes liste returneret.
+\begin{lstlisting}
+	Larss-MacBook-Pro:intro_til_terminal tools$ ls -a
+	.		LICENSE		fil_sys_nav.tex	intro.tex	
+	..		README.md	forord.aux	main_book.aux	
+	.git		compile.sh	forord.tex	main_book.log	
+	.skjult		fil_sys_nav.aux	intro.aux	main_book.pdf	
+\end{lstlisting}
+\section{CD - Jeg vil væk}
+
+\section{CP - Kopi}
+
+\section{MV - Flyt dig}
