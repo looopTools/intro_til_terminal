@@ -73,3 +73,42 @@ Hvis man ønsker at kopiere en fil, gøres dette med kommandoen \textit{cp} som 
         demo.txt
 \end{lstlisting}
 \section{MV - Flyt dig}
+\textbf{M}o\textbf{V}e eller flyt er en måde hvor på man kan flytte en fil eller en mappe fra et sted i systemet til et andet. Lige som \textit{cp} tager \textit{mv} to argumenter, elementer som man vil havde flyttet og destinations mappen. 
+\begin{lstlisting}
+	h271:test tools$ ls t_1
+        demo.txt
+	h271:test tools$ ls t_2
+	h271:test tools$ mv t_1/demo.txt t_2/
+	h271:test tools$ ls t_1
+	h271:test tools$ ls t_2
+        demo.txt
+\end{lstlisting}
+\subsection*{Omdøb}
+Man kan også omdøbe en fil med kommandoen \textit{mv}, dette gøres ved at tage en fil som først parameter og bruger en fil som anden parameter, eksempeltvis
+\begin{lstlisting}
+	h271:t_2 tools$ ls
+        demo.txt
+	h271:t_2 tools$ mv demo.txt demo_2.txt 
+        :t_2 tools$ ls
+        demo_2.txt
+\end{lstlisting}
+\section{RM - Væk med dig}
+\textbf{R}e\textbf{M}ove eller fjern er en kommando som kan bruges til at slette filer. 
+\begin{lstlisting}
+	h271:test tools$ ls t_2/
+        demo_2.txt
+	h271:test tools$ rm t_2/demo_2.txt 
+	h271:test tools$ ls t_2/
+\end{lstlisting}
+\subsection*{-r fjer alt under mig og mig}
+Hvis man ønsker at slette en mappe og alt der ligger i mappen, skal man sætte følgende flag på \textit{rm -r}, hvor \texit{-r} står for rekrusiv. Hvilket vil sige at den udføre kommandoen rekrusivt.
+\begin{lstlisting}
+	h271:test tools$ ls
+        t_1	t_2	test_2
+	h271:test tools$ ls test_2/
+        demo_2.txt
+	h271:test tools$ rm -r test_2/
+	h271:test tools$ ls
+        t_1	t_2
+\end{lstlisting}
+\subsection*{RMDIR - Fjern mappe med indhold}
