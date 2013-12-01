@@ -4,7 +4,7 @@ En af de vigtigts ting at kunne i kommandolinjen, er at  havde evnerne til at na
 \section{PWD - hvor er vi?}
 En ret relevant dele af navigering er ofte at vide hvor man i det hele taget er. Det er her kommandoen \textit{pwd} kommer ind i billedet. \textit{pwd} står for \textbf{P}rint \textbf{W}orking \textbf{D}irectory, kommandoen returnere den sti som man arbejder i lige nu. 
 \begin{lstlisting}
-	Larss-MacBook-Pro:intro_til_terminal tools $ pwd
+	h271:intro_til_terminal tools $ pwd
 	/Users/tools/Documents/intro_til_terminal
 \end{lstlisting}
 \subsection*{Og hvad så}
@@ -17,7 +17,7 @@ Er den overordnet filsti, som man er nød til at komme igennem for at kunne komm
 \section{LS - Hvad er der her?}
 En anden vigtigt del af at arbejde i filsystemet, er at vide hvilke filer og mapper, som er i den mappe man arbejder i. Det er til dette formål man bruger kommandoen \textit{ls}. \textit{ls} betyder list directory contents, altså list indholdet af en mappe. Hvis kommandoen kaldes ud flag, returneres en liste af alt, som ikke er skjult i mappen.
 \begin{lstlisting}
-	Larss-MacBook-Pro:intro_til_terminal tools$ ls
+	h271:intro_til_terminal tools$ ls
 	LICENSE		fil_sys_nav.tex	intro.tex	main_book.tex
 	README.md	forord.aux	main_book.aux	main_book.toc
 	compile.sh	forord.tex	main_book.log	ordliste.aux
@@ -26,14 +26,50 @@ En anden vigtigt del af at arbejde i filsystemet, er at vide hvilke filer og map
 \subsection*{Men jeg har skjulte filer}
 På UNIX baseret, systemer er alle filer og mapper som starter med \textit{.} skjulte, eksemplet kunne hede .skjult. Den vil vi altså gerne kunne se, så vi bruger flaget \textit{-a} som står for all eller alle, også får man en lidt anderledes liste returneret.
 \begin{lstlisting}
-	Larss-MacBook-Pro:intro_til_terminal tools$ ls -a
+	h271:intro_til_terminal tools$ ls -a
 	.		LICENSE		fil_sys_nav.tex	intro.tex	
 	..		README.md	forord.aux	main_book.aux	
 	.git		compile.sh	forord.tex	main_book.log	
 	.skjult		fil_sys_nav.aux	intro.aux	main_book.pdf	
 \end{lstlisting}
+\subsection*{List alt i en undermappe}
+Man kan også liste alt i mappe ved at give stien til mappe
+\begin{lstlisting}
+  h271:test tools$ ls
+  t_1    t_2    test_2
+  h271:test tools$ ls t_1
+  demo.txt
+\end{lstlisting}
 \section{CD - Jeg vil væk}
-
+For at kunne navigere rundt i sit filsystem skal man naturligvis også kunne komme væk fra den mappe man er i. Dette gøres via kommandoen \textit{cd}, som står \textbf{C}hange \textbf{D}irectory eller ændre mappe. 
+\begin{lstlisting}
+	h271:intro_til_terminal tools$ pwd
+	/Users/tools/Documents/intro_til_terminal
+	h271:intro_til_terminal tools$ cd test/
+	h271:test tools$ pwd
+	/Users/tools/Documents/intro_til_terminal/test
+\end{lstlisting}
+Hvis man vil et "trin" op i filsystemet skriver man \textit{cd ..}
+\section{MKDIR - Ny mappe}
+Man kan få brug for oprette en mappe, dette gøres med kommandoen; \textit{mkdir} som betyder \textbf{M}a\textbf{K}e \textbf{Dir}ectory eller lav mappe. Kommandoen opretter en mappe i den nuværende arbejdesmappe.
+\begin{lstlisting}
+	h271:test tools$ pwd
+	/Users/tools/Documents/intro_til_terminal/test
+	h271:test tools$ ls
+	h271:test tools$ mkdir test_2
+	h271:test tools$ ls
+	test_2
+\end{lstlisting}
 \section{CP - Kopi}
-
+Hvis man ønsker at kopiere en fil, gøres dette med kommandoen \textit{cp} som står for \textbf{C}o\textbf{p}y. Kommandoen kræver 2 argumenter; filen som ønskes kopieret og destinations mappen. Så hvis man har en mappe \textit{t\_1} som indholder en fil \textit{demo.txt} som man ønsker at flyttet til mappen \textit{t\_2} gøres det sådan her:
+\begin{lstlisting}
+	h271:test tools$ ls t_1
+        demo.txt
+	h271:test tools$ ls t_2
+	h271:test tools$ cp t_1/demo.txt t_2
+	h271:test tools$ ls t_1
+        demo.txt
+	h271:test tools$ ls t_2
+        demo.txt
+\end{lstlisting}
 \section{MV - Flyt dig}
