@@ -7,4 +7,5 @@
 \contentsline {section}{\numberline {2.4}MKDIR - Ny mappe}{5}
 \contentsline {section}{\numberline {2.5}CP - Kopi}{5}
 \contentsline {section}{\numberline {2.6}MV - Flyt dig}{5}
-\contentsline {chapter}{\numberline {A}Ordliste}{7}
+\contentsline {section}{\numberline {2.7}RM - V\IeC {\ae }k med dig}{6}
+\contentsline {chapter}{\numberline {A}Ordliste}{9}

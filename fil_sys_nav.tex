@@ -101,7 +101,7 @@ Man kan også omdøbe en fil med kommandoen \textit{mv}, dette gøres ved at tag
 	h271:test tools$ ls t_2/
 \end{lstlisting}
 \subsection*{-r fjer alt under mig og mig}
-Hvis man ønsker at slette en mappe og alt der ligger i mappen, skal man sætte følgende flag på \textit{rm -r}, hvor \texit{-r} står for rekrusiv. Hvilket vil sige at den udføre kommandoen rekrusivt.
+Hvis man ønsker at slette en mappe og alt der ligger i mappen, skal man sætte følgende flag på \textit{rm -r}, hvor \textit{-r} står for rekrusiv. Hvilket vil sige at den udføre kommandoen rekrusivt.
 \begin{lstlisting}
 	h271:test tools$ ls
         t_1	t_2	test_2
@@ -112,3 +112,12 @@ Hvis man ønsker at slette en mappe og alt der ligger i mappen, skal man sætte 
         t_1	t_2
 \end{lstlisting}
 \subsection*{RMDIR - Fjern mappe med indhold}
+Hvis man vil fjerne en mappe, som man ved er tom, kan man skrive \textit{rmdir} og så mappens navn som argument.
+\begin{lstlisting}
+	h271:test tools$ ls
+        t_1	t_2
+	h271:test tools$ ls t_2
+	h271:test tools$ rmdir t_2/
+	h271:test tools$ ls
+        t_1
+\end{lstlisting}
