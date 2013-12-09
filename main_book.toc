@@ -1,11 +1,14 @@
 \select@language {danish}
-\contentsline {chapter}{\numberline {1}Introduktion}{1}
-\contentsline {chapter}{\numberline {2}Navigering i filsystemet}{3}
-\contentsline {section}{\numberline {2.1}PWD - hvor er vi?}{3}
-\contentsline {section}{\numberline {2.2}LS - Hvad er der her?}{4}
-\contentsline {section}{\numberline {2.3}CD - Jeg vil v\IeC {\ae }k}{4}
-\contentsline {section}{\numberline {2.4}MKDIR - Ny mappe}{5}
-\contentsline {section}{\numberline {2.5}CP - Kopi}{5}
-\contentsline {section}{\numberline {2.6}MV - Flyt dig}{5}
-\contentsline {section}{\numberline {2.7}RM - V\IeC {\ae }k med dig}{6}
-\contentsline {chapter}{\numberline {A}Ordliste}{9}
+\contentsline {chapter}{\numberline {1}Introduktion}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Hvad bliver ikke d\IeC {\ae }kket}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Kommando opbygning}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}MAN - Din ven i m\IeC {\o }rket}{2}{section.1.3}
+\contentsline {chapter}{\numberline {2}Navigering i filsystemet}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}PWD - hvor er vi?}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}LS - Hvad er der her?}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}CD - Jeg vil v\IeC {\ae }k}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}MKDIR - Ny mappe}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}CP - Kopi}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}MV - Flyt dig}{8}{section.2.6}
+\contentsline {section}{\numberline {2.7}RM - V\IeC {\ae }k med dig}{8}{section.2.7}
+\contentsline {chapter}{\numberline {A}Ordliste}{11}{appendix.A}

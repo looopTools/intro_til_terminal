@@ -1,6 +1,10 @@
 \documentclass{book}
 \usepackage[utf8]{inputenc} %%\usepackage[utf8x]{inputenc} 
 \usepackage[danish]{babel} % Danish letters 
+
+\usepackage{hyperref} % hyperlinks
+\usepackage{parskip} % Disable US-type paragraph
+
 \usepackage{afterpage}
 
 \usepackage{listings}
@@ -11,24 +15,20 @@
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \lstset{frame=tb,
-  language=bash,
+  language=sh,%bash,
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
   columns=flexible,
-  basicstyle={\small\ttfamily},
   numbers=none,
   numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
   breaklines=true,
   breakatwhitespace=true
-  tabsize=3
+  tabsize=2
 }
 
 \title{Introduktion til Terminal}
-\author{Lars Nielsen \\ lnc13.lars@gmail.com}
+\author{Lars Nielsen \\ \href{mailto:lnc13.lars@gmail.com}{lnc13.lars@gmail.com}}
 \begin{document}
 \maketitle
 	\afterpage{\null\newpage}

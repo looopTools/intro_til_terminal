@@ -1,0 +1,6 @@
+pdflatex main_book.tex &&
+pdflatex main_book.tex &&
+bibtex main_book.aux &&
+bibtex main_book.aux &&
+pdflatex main_book.tex &&
+open main_book.pdf
