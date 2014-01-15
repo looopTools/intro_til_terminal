@@ -1,0 +1,32 @@
+\chapter{Historie}
+Hvis man ofte bruger samme kommando med samme pararmeter, eller ikke lige kan huske hvordan en kommandos struktur den er, kan du bruge kommandoen \textit{history}
+\begin{lstlisting}
+	h271:intro_til_terminal tools$ history
+	  495  sudo rm /etc/postgres-reg.ini
+	  496  brew list
+	  497  brew update
+	  498  brew install postgresql
+	  499  sudo port install postgresql93
+	  500  sudo port selfupdate
+	  501  cd Documents/intro_til_terminal/
+	  502  ls
+	  503  open main_book.pdf 
+	  504  clear
+	  505  history
+	h271:intro_til_terminal tools$ 
+\end{lstlisting}
+Dette er som det kan ses et meget lille udsnit af alle kommandoer, man kan scrolle igeenem sin historier. Her kan man så se tideliger kommandoer man har kaldt. 
+\subsection*{Kald mig igen}
+Som det kan ses i outputet ovenen for har være kommando fået tildelt et nummer, eksempeltvis har \textit{ls} fået nummer 502. det nummer er ret behjælpligt hvis man ikke ønsker at indtastet hele kommandoen igen, så kan man i stedet for indtaste \textit{!nummer} og så bliver kommandoen kørt igen, Men man skal være opmærksom på at tallet ændre sig, som kommandoerne bliver skubet ud af historien. 
+\begin{lstlisting}
+	h271:intro_til_terminal tools$ !502
+	 ls
+	 #compile.sh#	disk.tex	hist.aux	main_book.aux	mkdir
+	 #hist.tex#	disk.tex~	hist.tex	main_book.log	ordliste.aux
+	 LICENSE		fil_sys_nav.aux	hist.tex~	main_book.out	ordliste.tex
+	 README.md	fil_sys_nav.tex	images		main_book.pdf	test
+	 compile.sh	forord.aux	intro.aux	main_book.tex
+	 disk.aux	forord.tex	intro.tex	main_book.toc
+	h271:intro_til_terminal tools$ 
+\end{lstlisting}
+

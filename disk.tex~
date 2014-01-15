@@ -1,0 +1,14 @@
+\chapter{Så kikker vi på diske}
+I dette kapitel kikkes der på, hvordan man får overblik over, hvor meget plads der er på ens interndisk og eksterndiske, pluds lidt små sjov ting
+omkring diske.
+\section{df - fri disk}
+\textit{d}isk \textit{f}ree informere dig om hvor meget plads der bliver brugt på din disk og hvor meget der er frit på disken.
+For at benytte kommandoen indtastes simpelthen bare \textit{df}
+
+\subsection{-h - Menneskligt læsligt}
+
+\subsection{Hvilken disk}
+\includegraphics{images/df_std.png}
+\begin{lstlisting}
+nkk
+\end{lstlisting}
