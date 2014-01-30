@@ -18,5 +18,5 @@
 \contentsline {chapter}{\numberline {5}Processer}{11}{chapter.5}
 \contentsline {section}{\numberline {5.1}TOP hvad k\IeC {\o }rer}{11}{section.5.1}
 \contentsline {section}{\numberline {5.2}KILL og PKILL}{12}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}PKILL - Vi dr\IeC {\ae }ber p\IeC {\r a} navn}{12}{subsection.5.2.1}
-\contentsline {chapter}{\numberline {A}Ordliste}{13}{appendix.A}
+\contentsline {chapter}{\numberline {6}Mange kommandoer p\IeC {\r a} engang}{13}{chapter.6}
+\contentsline {chapter}{\numberline {A}Ordliste}{14}{appendix.A}

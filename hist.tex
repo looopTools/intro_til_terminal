@@ -29,4 +29,18 @@ Som det kan ses i outputet ovenen for har være kommando fået tildelt et nummer
 	 disk.aux	forord.tex	intro.tex	main_book.toc
 	h271:intro_til_terminal tools$ 
 \end{lstlisting}
-
+\subsection*{Grib mig i historien}
+Hvis man kender den kommando, man ønsker at kalde, men bare har glemete eksempeltvis parameterne der skal sendes med. Kan man benytte \textit{grep} i kombination med \textit{history}, ved at skrive følgende kommando \textit{history $\mid$ grep \#navn\_på\_kommando\#}, \textit{$\mid$} kaldes en pipe. Neden for ses et eksempel, hvor historien for \textit{vi} gerne vil findes
+\begin{lstlisting}
+	h271:intro_til_terminal tools$ history | grep vi
+	   50  vi compile.sh
+	  114  vi ~/.bash_profile
+	  206  vi App.rb 
+	  393  vi superliga.c 
+	  410  vi merge.rb 
+	  413  vi merge.rb 
+	  414  vi merge
+	  415  vi merge.rb 
+	  419  vi merge.rb 
+	  491  vi Makefile 
+\end{lstlisting}
