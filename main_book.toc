@@ -18,5 +18,8 @@
 \contentsline {chapter}{\numberline {5}Processer}{11}{chapter.5}
 \contentsline {section}{\numberline {5.1}TOP hvad k\IeC {\o }rer}{11}{section.5.1}
 \contentsline {section}{\numberline {5.2}KILL og PKILL}{12}{section.5.2}
-\contentsline {chapter}{\numberline {6}Mange kommandoer p\IeC {\r a} engang}{13}{chapter.6}
-\contentsline {chapter}{\numberline {A}Ordliste}{14}{appendix.A}
+\contentsline {chapter}{\numberline {6}Sm\IeC {\r a} gode ting}{13}{chapter.6}
+\contentsline {section}{\numberline {6.1}Mange kommandoer p\IeC {\r a} engang}{13}{section.6.1}
+\contentsline {section}{\numberline {6.2}ALIAS}{13}{section.6.2}
+\contentsline {section}{\numberline {6.3}CURL}{14}{section.6.3}
+\contentsline {chapter}{\numberline {A}Ordliste}{15}{appendix.A}

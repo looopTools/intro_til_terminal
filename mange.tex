@@ -1,9 +1,26 @@
-\chapter{Mange kommandoer på engang}
+\chapter{Små gode ting}
+I dette kapitel dækkes små "hacks" til at kunne gøre arbejdet med kommandolinjen letter.
+\section{Mange kommandoer på engang}
 Når man med tiden opdager at flere kommando tit bliver ud ført sammen og i hvis række følge, bliver man træt af at skrive en kommando trykke enter og så skrive næste kommando, og det er her man bliver glad for \textit{\&\&} som tillader en at link kommandoer.
 Eksempelvis, hvis man vil lave en mappe også gå direkte ind i den, altså kombinere \textit{mkdir} og \textit{cd}, og i dette eksempels tilfælde også \textit{pwd} kan dette gøres så ledes .
 \begin{lstlisting}
 	h271:intro_til_terminal tools$ pwd && mkdir kombi_test && cd kombi_test && pwd
-	/Users/tools/Documents/intro_til_terminal
-	/Users/tools/Documents/intro_til_terminal/kombi_test 
+	  /Users/tools/Documents/intro_til_terminal
+	  /Users/tools/Documents/intro_til_terminal/kombi_test 
 \end{lstlisting}
 Som udføre alle kommandoerne i række følge. 
+\input{alias}
+\section{CURL}
+I dette eksemple benyttes material fra \href{http:www.ruby-lang.org}{www.ruby-lang.org} \par
+CURL er en måde hvor på en fil kan hentes fra en server, det gøre ret simpelt med \textit{curl \#adresse til filen på serveren\#}, men outputtet giver ikke altid mening. Derfor kan man gøre brug af flaget -O, som gør at filen kan gives et navn. kommandostrukturen ser således \textit{curl \#navn\_på\_fil\# \#adresse til filen på serveren\#} og man skal være i den mappe, man ønsker filen skal ligge, eller give stien ved fil navnet. Se eksempel neden for 
+
+\begin{lstlisting}
+	h271h271:curl tools$ ls
+	h271:curl tools$ curl -o ruby-2.1.0.tar.gz http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.gz
+	    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+	                                   Dload  Upload   Total   Spent    Left  Speed
+          100 14.3M  100 14.3M    0     0  6368k      0  0:00:02  0:00:02 --:--:-- 8655k
+	h271:curl tools$ ls
+	  ruby-2.1.0.tar.gz
+\end{lstlisting}
+

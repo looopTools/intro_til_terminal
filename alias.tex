@@ -1,0 +1,17 @@
+\section{ALIAS}
+Kommandoer kan være lange og svære og huske, derfor kan man benytte benytte sig af \textit{alias}.
+Alias er i sig selv ikke kommando men en funktionalitet, som er en del af ens kommandolinjeværktøj. 
+For at benyttet sig af alias, skal der editeres i en fil som kaldes \textit{.bashrc}, denne fil 
+kan editeres ved at benytte \textit{VI}. Som eksempel, vil vi benytte kommandoen cd som eksempel, 
+også vil vi gerne ændre nuværende mappe til skrivebordet, vi gør så ledes:
+\begin{lstlisting}
+	h271:intro_til_terminal tools$ vi  ~/.bashrc
+\end{lstlisting}
+Når \textit{VI} åbnes skal man trykke \textit{i} for at indsætte de tegn der er behov for og på en ny linje nederst, i file skrives:
+\begin{center}
+  alias cddesktop='cd ~/Desktop'
+\end{center}
+For at gennem trykkes der på escape knappe (esc), og så følge \textit{:wq}. \textit{:wq} er en vi kommando, w = write, q = quit. Når man har gemt, skal man genilæse sing \textit{.bashrc} fil, dette gøres således:
+\begin{lstlisting}
+	h271:intro_til_terminal tools$ .  ~/.bashrc
+\end{lstlisting}
