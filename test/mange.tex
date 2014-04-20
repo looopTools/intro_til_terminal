@@ -11,7 +11,7 @@ Eksempelvis, hvis man vil lave en mappe også gå direkte ind i den, altså komb
 Som udføre alle kommandoerne i række følge. 
 \input{alias}
 \section{CURL}
-I dette eksemple benyttes material fra \href{http:www.ruby-lang.org}{www.ruby-lang.org} \par
+I dette afsnit benyttes material fra \href{http:www.ruby-lang.org}{www.ruby-lang.org} \par
 CURL er en måde hvor på en fil kan hentes fra en server, det gøre ret simpelt med \textit{curl \#adresse til filen på serveren\#}, men outputtet giver ikke altid mening. Derfor kan man gøre brug af flaget -O, som gør at filen kan gives et navn. kommandostrukturen ser således \textit{curl \#navn\_på\_fil\# \#adresse til filen på serveren\#} og man skal være i den mappe, man ønsker filen skal ligge, eller give stien ved fil navnet. Se eksempel neden for 
 
 \begin{lstlisting}
@@ -23,4 +23,10 @@ CURL er en måde hvor på en fil kan hentes fra en server, det gøre ret simpelt
 	h271:curl tools$ ls
 	  ruby-2.1.0.tar.gz
 \end{lstlisting}
-
+\section{grep}
+Grep tillader søgning i tekst filer, og kommandoen kaldes ved at skrive 
+\textit{grep søgeord filnavn} og man får som retur de linjer i teksten hvor der står det ord man søger efter
+\begin{lstlisting}
+	h271:intro_til_terminal tools$ grep grep mange.tex
+	Greb tillader soegning i tekst filer, og kommandoen kaldes ved at skrive \textit{grep #file\_name#}
+\end{lstlisting}

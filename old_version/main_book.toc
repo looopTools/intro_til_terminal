@@ -22,4 +22,5 @@
 \contentsline {section}{\numberline {6.1}Mange kommandoer p\IeC {\r a} engang}{13}{section.6.1}
 \contentsline {section}{\numberline {6.2}ALIAS}{13}{section.6.2}
 \contentsline {section}{\numberline {6.3}CURL}{14}{section.6.3}
+\contentsline {section}{\numberline {6.4}grep}{14}{section.6.4}
 \contentsline {chapter}{\numberline {A}Ordliste}{15}{appendix.A}

@@ -1,0 +1,98 @@
+\chapter{Filsystem}
+En del af det at benytte en computer, er at kunne navigere filsystemet hurtigt og effektivt. 
+Derfor er det vigtigt at kunne benyttet de korrekte kommandoer, til disse arbejdes processer. 
+Disse kommandoer vil blive dækket i dette kapitel.
+\section{PWD}
+\emph{P}rint \emph{W}orking \emph{D}irectory printer den sti, som man befinder sig i. Kommandoen tillader således en bruger at orientere sig om, hvor i filsystemet denne befinder sig.
+\begin{lstlisting}[title=pwd eksempel]
+	$:version_3 tools$ pwd
+	/Users/tools/Documents/intro_til_terminal/version_3
+\end{lstlisting}
+\section{CD}
+\emph{C}hange \emph{D}irectory ændre den sti, man befinder sig. Kommandoen tager et parameter, som skal være en sti eller \emph{..} som føre en bruger en niveau op i filsystemet. 
+\begin{lstlisting}[title=cd eksempel]
+	$:version_3 tools$ pwd
+	/Users/tools/Documents/intro_til_terminal/version_3
+	$:version_3 tools$ cd code/
+	$:code tools$ pwd
+	/Users/tools/Documents/intro_til_terminal/version_3/code
+\end{lstlisting}
+\section{LS}
+\emph{L}ist directory content\emph{S} lister, som standard alle \textit{ikke skjulte} filer.
+\begin{lstlisting}[title=ls eksempel]
+	$:version_3 tools$ ls
+	code		filesystem	main_book.log	
+	compile.sh	introduktion	main_book.pdf	
+	compile.sh~	main_book.aux	main_book.tex	
+\end{lstlisting}
+Hvis en bruger ønsker at få vist skjulte filer, tilføjer man flaget \textit{-a}, som betyder at 
+man får vist alt
+\begin{lstlisting}[title=ls -a eksempel]
+	$:version_3 tools$ ls
+	.	code		filesystem	main_book.log	
+	..	compile.sh	introduktion	main_book.pdf	
+\end{lstlisting}
+\section{MKDIR}
+\emph{M}a\emph{K}e \emph{DIR}ectory tillader en bruger at lave en mappe. Kommandoen tager et argument, som er navnet på den nye mappe.
+\begin{lstlisting}[title=mkdir eksempel]
+	$:demo tools$ ls
+	$:demo tools$ mkdir dir_ex
+	$:demo tools$ ls
+	dir_ex
+\end{lstlisting}
+Hvis man ønsker at lave en mappe et andet sted i systemet, kan man give en fuld sti som parameter til kommandoen
+\begin{lstlisting}[title=mkdir med sti eksempel]
+	$:Desktop tools$ pwd
+	/Users/tools/Desktop
+	$:Desktop tools$ mkdir /Users/tools/Documents/intro_til_terminal/version_3/demo/dir_2_ex/
+	$:Desktop tools$ ls /Users/tools/Documents/intro_til_terminal/version_3/demo/
+	dir_2_ex	dir_ex
+\end{lstlisting}
+Dir 1: \textit{/Users/tools/Documents/intro\_til\_terminal/version\_3/demo/dir\_2\_ex/} \\
+Dir 2: \textit{/Users/tools/Documents/intro\_til\_terminal/version\_3/demo/} \par
+Det er også muligt at oprette flere mapper på engang, ved at skrive navne på mappe, med et mellemrum 
+\begin{lstlisting}[title=mkdir med flere mapper eksempel]
+	$:demo tools$ ls
+	dir_ex
+	$:demo tools$ mkdir dir_ex_2 dir_ex_3
+	$:demo tools$ ls
+	dir_ex		dir_ex_2	dir_ex_3
+\end{lstlisting}
+
+
+\section{RMDIR}
+\emph{R}e\emph{M}ove \emph{DIR}ectory tillader at en bruger at fjerne en tom mappe. Kommandoen tager et argument, som er navnet på den nye mappe og kan som \textit{mkdir} også tage stien til en mappe.
+\begin{lstlisting}[title=rmdir eksempel]	
+	$:demo tools$ ls
+	dir_2_ex	dir_ex
+	$:demo tools$ rmdir dir_2_ex/
+	$:demo tools$ ls
+	dir_ex
+\end{lstlisting}
+\section{RM}
+\emph{R}e\emph{M}ove tillader en at fjern en fil fra en mappe og tager pågældende fil som argument
+\begin{lstlisting}[title=rmdir eksempel]	
+	$:demo tools$ ls
+	demo.txt	dir_ex
+	$:demo tools$ rm dir_ex/
+	rm: dir_ex/: is a directory
+	$:demo tools$ rm demo.txt 
+	$:demo tools$ ls
+	dir_ex
+\end{lstlisting}
+
+Man kan også fjerne flere filer og under mapper og en hoved mappe på en gang. Dette gøres ved at bruge flaget \textit{-r}, hvor er betyder rekursivt.
+\begin{lstlisting}[title=rmdir -r eksempel]	
+	$:demo tools$ ls 
+	demo_2	dir_ex
+	$:demo tools$ ls demo_2/
+	demo.txt
+	$:demo tools$ rm demo_2/
+	rm: demo_2/: is a directory
+	$:demo tools$ rm -r demo_2/
+	$:demo tools$ ls
+	dir_ex
+\end{lstlisting}
+
+\section{MV}
+
