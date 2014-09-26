@@ -7,7 +7,6 @@ Derfor vil de forskellige basale kommandoer, benyttet i sammenhæng med filsyste
 \end{lstlisting}
 Print working directory, printer den nu værende sti, som kommandoer vil blive udført i, uden andre sti parameter.
 Hvis man eksempeltvis, køre kommandoen i sin hjemme mappe, ville retur værdien fra \emph{pwd}, være \emph{/Users/\#username\#}
-
 \section{List files}
 \begin{lstlisting}
   ls
@@ -20,4 +19,23 @@ i nuværende arbejdes sti, og alle ikke skjulte filer bliver printet. Hvis der o
   ls -a
   ls /usr
   ls -a /usr
+\end{lstlisting}
+\section{Change directory}
+\begin{lstlisting}
+  cd
+\end{lstlisting}
+For at arbejde med et filsystem, skal det også være muligt at navigere
+rundt i det. Dette gøres med kommandoen \emph{cd}, som tager minimum et
+input.
+\subsection*{Mulige inputs}
+\emph{En fuld sti}, altså en sti der er fuldt angivet, eksempeltvis \emph{/usr}. \\
+\emph{En relativ sti}, altså en sti som før nævnt starter med \emph{\textasciitilde}\\
+\emph{..}, er inputtet som tillader at der gåes et skridt tilbage i sti strukturen. \\
+\emph{Ingen input}, er inputtet som gives, til at komme til nuværende
+brugers hjemmemappe. Eksempler:
+\begin{lstlisting}
+  cd /usr
+  cd ~/Documents
+  cd ..
+  cd
 \end{lstlisting}
