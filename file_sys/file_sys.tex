@@ -1,0 +1,23 @@
+\chapter{Basal filesystem operationer}
+En vigtig del af at benytte, en hver form for computer system, være det sig server eller desktop systemer.
+Derfor vil de forskellige basale kommandoer, benyttet i sammenhæng med filsystemet beskrevet i dette kapitel.
+\section{Print working directory}
+\begin{lstlisting}
+  pwd
+\end{lstlisting}
+Print working directory, printer den nu værende sti, som kommandoer vil blive udført i, uden andre sti parameter.
+Hvis man eksempeltvis, køre kommandoen i sin hjemme mappe, ville retur værdien fra \emph{pwd}, være \emph{/Users/\#username\#}
+
+\section{List files}
+\begin{lstlisting}
+  ls
+\end{lstlisting}
+List files tillader at list alle filer i en sti. Hvis der ikke gives en sti som input parameter, tages der udgangs punkt
+i nuværende arbejdes sti, og alle ikke skjulte filer bliver printet. Hvis der også skal printes skjulte filer, kaldes
+\emph{ls} med flaget \emph{-a}, hvor \emph{-a} står for all. Eksempler på kommando kald
+\begin{lstlisting}
+  ls
+  ls -a
+  ls /usr
+  ls -a /usr
+\end{lstlisting}
