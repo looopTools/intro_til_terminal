@@ -1,4 +1,5 @@
-intro_til_terminal
+Introduktion til Terminal 
 ==================
 
-A book which introduce one to the use of Termnial
+Dette er en bog om introduktion til Terminal, med fokus på basal funktionalitet for ny begynder. 
+
