@@ -1,2 +1,0 @@
-pdflatex main_book.text
-open main_book.pdf
